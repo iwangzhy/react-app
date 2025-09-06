@@ -1,5 +1,6 @@
 import { type FC, useEffect, useMemo, useRef, useState } from 'react';
 import './asset/TodoList.css';
+import { useTitle } from './hooks/useTitle';
 
 interface TodoProps {
   id: string;
@@ -29,7 +30,7 @@ const TodoList: FC = () => {
     console.log('useMemo hook 被执行了 ...');
     return count;
   }, [count, todos]);
-
+  useTitle('react 实战 - 待办列表');
   function handleAdd() {
     const inputElement: HTMLInputElement | null = inputRef.current;
     setTodos(
