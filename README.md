@@ -80,3 +80,13 @@ npm install -D @commitlint/cli @commitlint/config-conventional
 
 npx --no-install commitlint --edit "$1"
 ```
+
+## React 基本知识
+
+- 组件
+- hooks
+    - useState
+    - useEffect
+    - useRef
+    - useMemo
+    - useCallback
